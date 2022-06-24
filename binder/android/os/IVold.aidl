@@ -70,7 +70,8 @@ interface IVold {
     int getStorageLifeTime();
     void setGCUrgentPace(int neededSegments, int minSegmentThreshold,
                          float dirtyReclaimRate, float reclaimWeight,
-                         int gcPeriod, int minGCSleepTime);
+                         int gcPeriod, int minGCSleepTime,
+                         int targetDirtyRatio);
     void refreshLatestWrite();
     int getWriteAmount();
 
